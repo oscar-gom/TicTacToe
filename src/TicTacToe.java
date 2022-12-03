@@ -24,9 +24,9 @@ public class TicTacToe {
             //Game
             do {
                 correctType = false;
-                if (!turn){
+                if (!turn) {
                     System.out.println("Player 1:");
-                }else {
+                } else {
                     System.out.println("Player 2:");
                 }
                 System.out.println("Choose a cell (1-9)");
@@ -34,59 +34,55 @@ public class TicTacToe {
                 if (!correctType) {
                     System.out.println("ERROR: Type a whole number");
                     scanner.nextLine();
-                }else {
+                } else {
                     usersChoice = scanner.nextInt();
-                        switch (usersChoice) {
-                            case 1, 2, 3 -> {
-                                if (gameBoard[0][usersChoice - 1] != ' ') { //Check if space already occupied
-                                    System.out.println("THE SPACE IS ALREADY OCUPPIED");
-                                    scanner.nextLine();
+                    switch (usersChoice) {
+                        case 1, 2, 3 -> {
+                            if (gameBoard[0][usersChoice - 1] != ' ') { //Check if space already occupied
+                                System.out.println("THE SPACE IS ALREADY OCUPPIED");
+                                scanner.nextLine();
+                            } else {
+                                if (!turn) {
+                                    gameBoard[0][usersChoice - 1] = 'X';
+                                    turn = true;
                                 } else {
-                                    if (!turn){
-                                        gameBoard[0][usersChoice - 1] = 'X';
-                                        moves++;
-                                        turn = true;
-                                    }else {
-                                        gameBoard[0][usersChoice - 1] = 'O';
-                                        moves++;
-                                        turn = false;
-                                    }
+                                    gameBoard[0][usersChoice - 1] = 'O';
+                                    turn = false;
                                 }
+                                moves++;
                             }
-                            case 4, 5, 6 -> {
-                                if (gameBoard[1][usersChoice - 4] != ' ') {
-                                    System.out.println("THE SPACE IS ALREADY OCUPPIED");
-                                    scanner.nextLine();
+                        }
+                        case 4, 5, 6 -> {
+                            if (gameBoard[1][usersChoice - 4] != ' ') {
+                                System.out.println("THE SPACE IS ALREADY OCUPPIED");
+                                scanner.nextLine();
+                            } else {
+                                if (!turn) {
+                                    gameBoard[1][usersChoice - 4] = 'X';
+                                    turn = true;
                                 } else {
-                                    if (!turn){
-                                        gameBoard[1][usersChoice - 4] = 'X';
-                                        moves++;
-                                        turn = true;
-                                    }else {
-                                        gameBoard[1][usersChoice - 4] = 'O';
-                                        moves++;
-                                        turn = false;
-                                    }
+                                    gameBoard[1][usersChoice - 4] = 'O';
+                                    turn = false;
                                 }
+                                moves++;
                             }
-                            case 7, 8, 9 -> {
-                                if (gameBoard[2][usersChoice - 7] != ' ') {
-                                    System.out.println("THE SPACE IS ALREADY OCUPPIED");
-                                    scanner.nextLine();
+                        }
+                        case 7, 8, 9 -> {
+                            if (gameBoard[2][usersChoice - 7] != ' ') {
+                                System.out.println("THE SPACE IS ALREADY OCUPPIED");
+                                scanner.nextLine();
+                            } else {
+                                if (!turn) {
+                                    gameBoard[2][usersChoice - 7] = 'X';
+                                    turn = true;
                                 } else {
-                                    if (!turn){
-                                        gameBoard[2][usersChoice - 7] = 'X';
-                                        moves++;
-                                        turn = true;
-                                    }
-                                    else {
-                                        gameBoard[2][usersChoice - 7] = 'O';
-                                        moves++;
-                                        turn = false;
-                                    }
+                                    gameBoard[2][usersChoice - 7] = 'O';
+                                    turn = false;
                                 }
+                                moves++;
                             }
-                            case default -> System.out.println("ERROR: TYPE A NUMBER FROM 1-9");
+                        }
+                        case default -> System.out.println("ERROR: TYPE A NUMBER FROM 1-9");
                     }
                 }
                 //Checking winning, losing or draw
@@ -96,7 +92,7 @@ public class TicTacToe {
                         gameBoard[2][0] == 'X' && gameBoard[2][1] == 'X' && gameBoard[2][2] == 'X' ||
                         //Diagonals
                         gameBoard[0][0] == 'X' && gameBoard[1][1] == 'X' && gameBoard[2][2] == 'X' ||
-                        gameBoard[0][2] == 'X' && gameBoard[1][1] == 'X' && gameBoard[2][0] == 'X'){
+                        gameBoard[0][2] == 'X' && gameBoard[1][1] == 'X' && gameBoard[2][0] == 'X') {
                     System.out.println("Player 1 WINS!");
                     correctType = true;
                     moves = 9;
@@ -110,7 +106,7 @@ public class TicTacToe {
                     System.out.println("Player 2 WINS!");
                     correctType = true;
                     moves = 9;
-                }else if (moves == 9){
+                } else if (moves == 9) {
                     System.out.println("It was a DRAW!");
                     correctType = true;
                 }
