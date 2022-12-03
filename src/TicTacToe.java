@@ -7,6 +7,7 @@ public class TicTacToe {
         boolean turn = false; //false = user1, true = user2
         int moves = 0;
         char[][] gameBoard = new char[3][3];
+        char[] check = new char[3];
         Scanner scanner = new Scanner(System.in);
 
         do {
@@ -89,7 +90,30 @@ public class TicTacToe {
                     }
                 }
                 //Checking winning, losing or draw
-
+                //Rows
+                if (gameBoard[0][0] == 'X' && gameBoard[0][1] == 'X' && gameBoard[0][2] == 'X' ||
+                        gameBoard[1][0] == 'X' && gameBoard[1][1] == 'X' && gameBoard[1][2] == 'X' ||
+                        gameBoard[2][0] == 'X' && gameBoard[2][1] == 'X' && gameBoard[2][2] == 'X' ||
+                        //Diagonals
+                        gameBoard[0][0] == 'X' && gameBoard[1][1] == 'X' && gameBoard[2][2] == 'X' ||
+                        gameBoard[0][2] == 'X' && gameBoard[1][1] == 'X' && gameBoard[2][0] == 'X'){
+                    System.out.println("Player 1 WINS!");
+                    correctType = true;
+                    moves = 9;
+                    //Rows
+                } else if (gameBoard[0][0] == 'O' && gameBoard[0][1] == 'O' && gameBoard[0][2] == 'O' ||
+                        gameBoard[1][0] == 'O' && gameBoard[1][1] == 'O' && gameBoard[1][2] == 'O' ||
+                        gameBoard[2][0] == 'O' && gameBoard[2][1] == 'O' && gameBoard[2][2] == 'O' ||
+                        //Diagonals
+                        gameBoard[0][0] == 'O' && gameBoard[1][1] == 'O' && gameBoard[2][2] == 'O' ||
+                        gameBoard[0][2] == 'O' && gameBoard[1][1] == 'O' && gameBoard[2][0] == 'O') {
+                    System.out.println("Player 2 WINS!");
+                    correctType = true;
+                    moves = 9;
+                }else if (moves == 9){
+                    System.out.println("It was a DRAW!");
+                    correctType = true;
+                }
             } while (!correctType);
         } while (moves != 9);
     }
