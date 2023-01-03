@@ -5,4 +5,3 @@ TicTacToe in Java's console
 or alone
 ### and have fun
 
-Made by Oscar
