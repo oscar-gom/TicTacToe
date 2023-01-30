@@ -4,7 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c09fd6e7-538c-48fa-a91f-7a2fba07eb33" name="Changes" comment="ver 1.0">
+    <list default="true" id="c09fd6e7-538c-48fa-a91f-7a2fba07eb33" name="Changes" comment="ver 1.1">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/TicTacToe.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TicTacToe.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -15,6 +16,19 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="7f2d068c-1841-43f7-a95f-7c41b45d16c1" />
+        <option name="url" value="https://github.com/PocaCaop/TicTacToe.git" />
+      </UrlAndAccount>
+    </option>
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -24,18 +38,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "ignore.preview.features.used": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -46,7 +63,14 @@
       <updated>1670017495100</updated>
       <workItem from="1670017496189" duration="1753000" />
       <workItem from="1670065317566" duration="4974000" />
-      <workItem from="1670075328271" duration="3312000" />
+      <workItem from="1670075328271" duration="3451000" />
+      <workItem from="1670172394312" duration="76000" />
+      <workItem from="1670252946854" duration="147000" />
+      <workItem from="1670264546809" duration="46000" />
+      <workItem from="1670352620612" duration="19000" />
+      <workItem from="1670352653640" duration="67000" />
+      <workItem from="1670353276973" duration="374000" />
+      <workItem from="1675098127297" duration="1122000" />
     </task>
     <task id="LOCAL-00001" summary="ver 0.1">
       <created>1670017542412</created>
@@ -69,7 +93,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670087877505</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="ver 1.1">
+      <created>1670088092801</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1670088092801</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -79,7 +110,8 @@
     <MESSAGE value="ver 0.1" />
     <MESSAGE value="ver 0.5" />
     <MESSAGE value="ver 1.0" />
-    <option name="LAST_COMMIT_MESSAGE" value="ver 1.0" />
+    <MESSAGE value="ver 1.1" />
+    <option name="LAST_COMMIT_MESSAGE" value="ver 1.1" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
